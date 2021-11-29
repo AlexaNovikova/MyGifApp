@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./scripts.js"></script>
+    <title>My Gif App</title>
+</head>
+
+<body>
+<h1>
+    <div style="text-align: center;">
+        <label for="codes">Choose a currency:</label>
+        <br>
+        <select id="codes" size="1"></select>
+        <br>
+        <button class="button" id="btn" onclick='showGif()'>Compare</button>
+        <br>
+        <div id="out"></div>
+    </div>
+</h1>
+<script>
+    $(showCodes());
+</script>
+
+</body>
+
+</html>
