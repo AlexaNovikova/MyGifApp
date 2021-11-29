@@ -48,7 +48,7 @@ public class ExchangeRatesService {
     public int compareRateForCurrencyCode(String charCode) {
         refreshRates();
         return (charCode!= null && this.currentRates!=null&&this.prevRates!=null)
-                ?  currentRates.getRates().get(charCode).compareTo(prevRates.getRates().get(charCode))
+                ?  prevRates.getRates().get(charCode).compareTo(currentRates.getRates().get(charCode))
                 : -5;
     }
 

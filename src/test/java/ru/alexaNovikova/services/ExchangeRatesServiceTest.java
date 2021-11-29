@@ -67,7 +67,7 @@ public class ExchangeRatesServiceTest {
                 .thenReturn(this.currentRates);
         Mockito.when(openExchangeRatesClient.getHistoricalRates(anyString(), anyString(), anyString()))
                 .thenReturn(this.prevRates);
-        int result = exchangeRatesService.compareRateForCurrencyCode("value3");
+        int result = exchangeRatesService.compareRateForCurrencyCode("value2");
         assertEquals(1, result);
     }
 
@@ -88,7 +88,7 @@ public class ExchangeRatesServiceTest {
                 .thenReturn(this.currentRates);
         Mockito.when(openExchangeRatesClient.getHistoricalRates(anyString(), anyString(), anyString()))
                 .thenReturn(this.prevRates);
-        int result = exchangeRatesService.compareRateForCurrencyCode("value2");
+        int result = exchangeRatesService.compareRateForCurrencyCode("value3");
         assertEquals(-1, result);
     }
 
