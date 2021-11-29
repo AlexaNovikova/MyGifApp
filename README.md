@@ -23,7 +23,7 @@ Endpoints:
 GET /rate/getCodes
 
 Получить гифку  
-GET /gg/getGif/{Char Code}
+GET /rate/getGif/{Char Code}
 
 Web страница с выпадающим списком допустимых кодов валют доступна по localhost:8189  
 После выбора валюты можно нажать кнопку Compare и получить гифку в соответствии с изменениями курса.
